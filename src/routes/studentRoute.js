@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const MasterSchema = require('../models/masterModel');
 const { getStudents, getStudent, createStudent, updateStudent, deleteStudent, getTotalStudents, getSearchStudent, getSearchLastStudent, getFilterStudent, getTotalStudents2 } = require("../controllers/studentController");
 
 router.get('/count', getTotalStudents)
